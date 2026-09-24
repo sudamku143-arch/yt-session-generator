@@ -102,7 +102,7 @@ class PotokenExtractor:
             self._extraction_done.clear()
             try:
                 browser = await nodriver.start(headless=False,
-                                               no_sandbox=True
+                                               no_sandbox=True,
                                                browser_executable_path=self.browser_path,
                                                user_data_dir=self.profile_path)
             except FileNotFoundError as e:
